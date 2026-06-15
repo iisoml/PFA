@@ -1,4 +1,4 @@
-name: Build and Push to Docker Hub
+﻿name: Build and Push to Docker Hub
 
 on:
   workflow_dispatch:
@@ -43,6 +43,6 @@ jobs:
 
       - name: Image digest summary
         run: |
-          echo " Docker image built and pushed:"
+          echo "≡ƒôª Docker image built and pushed:"
           echo "   - ${{ secrets.DOCKERHUB_USERNAME }}/lab-tat-api:latest"
           echo "   - ${{ secrets.DOCKERHUB_USERNAME }}/lab-tat-api:${{ github.sha }}"
